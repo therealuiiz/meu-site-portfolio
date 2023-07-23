@@ -8,7 +8,7 @@
   <meta name="description" content="Aqui estão todos os projetos desenvolvidos por mim" />
   <title>Luiz Fernando | Front-End Development</title>
   <!--<link rel="stylesheet" type="text/css" href="../css/style.css" /> -->
-  <link rel="stylesheet" href="/css/mobile.css">
+  <link rel="stylesheet" href="/css/main.css">
   <link rel="shortcut icon" href="/Assets/computador-portatil.png" type="image/x-icon">
 </head>
 
@@ -46,10 +46,13 @@
         <br>
         <div class="contact-form">
           <div id="form-messages"></div>
-          <form id="ajax-contact" method="post" role="form" action="contact.php" data-toggle="validator">
+          <form id="contactform" method="post" role="form"
+            action="https://formsubmit.io/send/b59ab501-fc50-48eb-a037-389d220ecc15" data-toggle=" validator">
+            <input name="_redirect" type="hidden" id="name" value="https://your website url">
             <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="0.6s">
               <input type="text" class="form-control" id="name" name="name" placeholder="NAME"
                 data-error="Field can't be blank!" required>
+              <input name="_formsubmit_id" type="text" style="display:none">
               <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
               <div class="help-block with-errors"></div>
             </div>
@@ -75,10 +78,10 @@
         </div>
       </div>
     </div>
-    <footer class="rodape">
-      <p class="rodape-copyright">&copy; Luiz Fernando Birce Rodrigues</p>
-    </footer>
   </main>
+  <footer class="rodape">
+    <span class="rodape-copyright">&copy; Luiz Fernando Birce Rodrigues</span>
+  </footer>
 
 </body>
 
