@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aqui estão todos os projetos desenvolvidos por mim" />
+  <title>Luiz Fernando | Front-End Development</title>
+  <!--<link rel="stylesheet" type="text/css" href="../css/style.css" /> -->
+  <link rel="stylesheet" href="/css/mobile.css">
+  <link rel="shortcut icon" href="/Assets/computador-portatil.png" type="image/x-icon">
+</head>
+
+<body>
+  <main class="conteudo">
+    <header class="header">
+      <a href="/" class="logo">Logo</a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"> <span class="nav-icon"></span></label>
+      <ul class="menu">
+        <li><a class="menu-link" href="#about">ABOUT</a></li>
+        <li><a class="menu-link" href="#portfolio">PORTFOLIO</a></li>
+        <li><a class="menu-link" href="#section-form">CONTACT</a></li>
+      </ul>
+    </header>
+
+    <section class="conteudo-principal">
+      <div class="conteudo-principal-escrito" id="about">
+        <h1 class="conteudo-principal-escrito-titulo">LUIZ RODRIGUES</h1>
+        <h4 class="conteudo-principal-escrito-subtitulo">
+          FRONT-END DEVELOPER
+        </h4>
+      </div>
+    </section>
+    <div class="container">
+      <p> Sou um estudante de Análise e Desenvolvimento de Sistemas, especializando-se em Front-End para o
+        Desenvolvimento
+        de aplicativos mobile ou páginas Web, aqui estarei publicando meus projetos.
+      </p>
+    </div>
+    <div class="section-form" id="section-form" data-anchor="contact">
+      <div class="content wow fadeInDown" data-wow-delay="0.2s">
+        <h1 class="title-form">CONTACT ME</h1>
+        <p class="container">If i can help you with something, let me know :)</p>
+        <br>
+        <div class="contact-form">
+          <div id="form-messages"></div>
+          <form id="ajax-contact" method="post" role="form" action="contact.php" data-toggle="validator">
+            <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="0.6s">
+              <input type="text" class="form-control" id="name" name="name" placeholder="NAME"
+                data-error="Field can't be blank!" required>
+              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+              <div class="help-block with-errors"></div>
+            </div>
+
+            <div class="form-group has-feedback wow fadeInRight" data-wow-delay="0.8s">
+              <input type="email" class="form-control" id="email" name="email" placeholder="EMAIL"
+                data-error="Field can't be blank!" required>
+              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+              <div class="help-block with-errors"></div>
+            </div>
+
+            <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="1s">
+              <textarea data-minlength="10" class="form-control" id="message" name="message" placeholder="MESSAGE"
+                data-error="Minimum of 10 characters" required></textarea>
+              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="wow-fadeInUp" data-wow-delay="1s">
+              <button type="submit" id="btn-form" name="submit" class="btn btn-lg">Send your message</button>
+            </div>
+          </form>
+          <br>
+        </div>
+      </div>
+    </div>
+    <footer class="rodape">
+      <p class="rodape-copyright">&copy; Luiz Fernando Birce Rodrigues</p>
+    </footer>
+  </main>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+body{
+    background: #010718;
+    overflow: hidden;
+    
+
+}
+.container{
+   
+    display: flex;
+    justify-content: center;
+
+
+}
+.container .text{
+    position: relative;
+    align-items: center;
+    color: #4070F4;
+    font-size: 30px;
+    font-weight: 600;
+}
+.container .text.first-text{
+    color: #FFF;
+}
+.text.sec-text{
+    margin-left: 5px;
+}
+
+.text.first-text , .text.sec-text{
+    top: 15em;
+}
+.text.sec-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #010718;
+    border-left: 1px solid #4070F4;
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+}
