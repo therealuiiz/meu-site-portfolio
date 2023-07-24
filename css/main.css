@@ -23,7 +23,7 @@ body {
   position: relative;
   z-index: 1;
   font-family: "Poppins", sans-serif;
-  background: url(/Assets/wallpaperflare-cropped\(1\).jpg);
+  background: url(../Assets/wallpaperflare-cropped\(1\).jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
