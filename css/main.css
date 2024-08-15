@@ -128,6 +128,12 @@ a {
   mix-blend-mode: multiply;
   margin-top: 5px;
   right: 3em;
+  
+}
+
+.logo .logotipo:hover{
+  transition: 0.2s ease-in-out;
+  transform: scale(1.1);
 }
 
 /* menu */
@@ -442,4 +448,21 @@ label {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+}
+
+.title-form-update{
+  background: #8b17ff;
+  background: -webkit-linear-gradient(to right, #8b17ff 0%, #ff7f04 100%);
+  background: -moz-linear-gradient(to right, #8b17ff 0%, #ff7f04 100%);
+  background: linear-gradient(to right, #8b17ff 0%, #ff7f04 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display:grid;
+  align-items: flex-end;
+  text-align: center;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
 }
